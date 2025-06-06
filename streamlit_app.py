@@ -1,6 +1,12 @@
 import streamlit as st
+import pybaseball as pb
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.set_page_config(page_title="Baseball Analytics", page_icon="⚾")
+
+home_page = st.Page("pages/home.py", title="Home")
+
+standings_page = st.Page("pages/standings.py", title="League Standings")
+
+pg = st.navigation([home_page, standings_page])
+
+pg.run()
