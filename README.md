@@ -1,4 +1,4 @@
-# 🎈 Baseball Analytics
+# ⚾ Baseball Analytics ⚾
 
 A Streamlit app for Baseball Research & Development!
 
